@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$GREEN - #01B47D</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #01B47D;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="max-w-md mx-auto space-y-8">
+        <div class="space-y-2">
+            <h1 class="text-5xl font-bold tracking-tight">$GREEN</h1>
+            <h2 class="text-xl opacity-90">The #01B47D memecoin</h2>
+            <p class="text-lg opacity-80">Simple. Green. Memecoin.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://example.com/buy-green" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+                Buy Now
+            </a>
+            
+            <a href="https://t.me/green01B47D" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+                <i data-feather="send"></i> Telegram
+            </a>
+            
+            <a href="https://x.com/your_green_token" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+                <i data-feather="twitter"></i> X
+            </a>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
