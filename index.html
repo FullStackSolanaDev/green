@@ -19,29 +19,43 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 1rem;
         }
         .text-mega {
-            font-size: 10rem; /* Dit bepaalt de grootte */
+            font-size: 5rem; /* Mobiel: 80px */
+            line-height: 1;
+        }
+        /* Tablet en groter */
+        @media (min-width: 640px) {
+            .text-mega {
+                font-size: 8rem; /* 128px */
+            }
+        }
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .text-mega {
+                font-size: 10rem; /* 160px */
+            }
         }
     </style>
 </head>
-<body class="p-6">
-    <div class="max-w-md mx-auto space-y-8">
+<body>
+    <div class="w-full max-w-4xl mx-auto space-y-8 px-4">
         <div class="space-y-2">
             <h1 class="text-mega font-bold tracking-tight">$GREEN</h1>
             <h2 class="text-xl opacity-90">#01B47D</h2>
         </div>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://example.com/buy-green" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            <a href="https://example.com/buy-green" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2 w-full sm:w-auto">
                 Buy Now
             </a>
             
-            <a href="https://t.me/green01B47D" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+            <a href="https://t.me/green01B47D" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2 w-full sm:w-auto">
                 <i data-feather="send"></i> Telegram
             </a>
             
-            <a href="https://x.com/your_green_token" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+            <a href="https://x.com/your_green_token" class="px-6 py-3 border border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition flex items-center justify-center gap-2 w-full sm:w-auto">
                 <i data-feather="twitter"></i> X
             </a>
         </div>
